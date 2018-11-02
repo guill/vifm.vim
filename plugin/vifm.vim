@@ -65,7 +65,7 @@ function! s:StartVifm(editcmd, ...)
 
 	" XXX: this is horrible, but had to do this to work around selection
 	"      clearing after each command-line command (:let in this case)
-	let edit = ' | execute ''cnoremap j <cr>'' | normal gs:editj'
+	let edit = ' | execute ''cnoremap j <cr>'' | normal gsl'
 
 	let pickargs = [
 	    \ '--choose-files', listf,
